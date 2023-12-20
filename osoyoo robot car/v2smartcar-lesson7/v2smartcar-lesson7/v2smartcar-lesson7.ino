@@ -69,7 +69,7 @@ void stop_Robot(){
   digitalWrite(leftWheelPin1,LOW);
   digitalWrite(leftWheelPin2,LOW);
 }
-
+char sensor[5];
 // — — — — — — Explanation of how the TSM values are stored and handled — — — — — — 
 // To represent our line detection input, we use binary. If the Tracking Sensor Module (TSM) detects black, it registers as 1; otherwise, it's 0. 
 // For instance, if the TSM detects black on the leftmost sensor, it will read '10000', with '1' representing black and '0' representing white. 
